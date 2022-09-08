@@ -25,3 +25,52 @@ code {
     'Courier New',
     monospace;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(102, 4, 4, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(168, 168, 168);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(139, 139, 139);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Mukta', sans-serif;
+}
+
+body.noScroll {
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0%;
+  margin: 0%;
+}
