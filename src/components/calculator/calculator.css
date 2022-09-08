@@ -1,0 +1,89 @@
+:root {
+  --gray: #808080;
+  --light-gray: #d1d1d1;
+  --bck-color: #e4e2e2;
+  --light-orange: #d46a0c;
+  --border-color: #adadad4b;
+}
+
+.main__container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.calc__container {
+  background-color: whitesmoke;
+  overflow: hidden;
+  border: 1px solid var(--gray);
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.display__area {
+  background-color: var(--light-gray);
+  margin: 0;
+  height: 27%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.disp__result {
+  font-size: 4rem;
+  font-weight: 800;
+  text-align: right;
+  padding-inline: 3%;
+}
+
+.button__container {
+  background-color: var(--light-gray);
+  height: 73%;
+}
+
+.calc-keys {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.calc__btn {
+  background-color: white;
+  font-size: 1.2rem;
+  border: 0.5px solid var(--border-color);
+  height: 12vh;
+}
+
+button[id="16"] {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+button[id="3"],
+button[id="7"],
+button[id="11"],
+button[id="15"],
+button[id="18"] {
+  background-color: var(--light-orange);
+  border: solid white 0.5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .calc__container {
+    background-color: whitesmoke;
+    overflow: hidden;
+    border: 1px solid var(--gray);
+    width: 50%;
+    margin: 0 auto;
+    height: 70vh;
+  }
+
+  .calc-keys {
+    height: 100%;
+  }
+
+  .calc__btn {
+    height: 100%;
+  }
+}
