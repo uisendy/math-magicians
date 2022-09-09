@@ -3,6 +3,7 @@ import Display from './Display';
 import Buttons from './Buttons';
 import calculate from '../../logic/calculate';
 import './calculator.css';
+import calcBtn from '../../logic/calculatorButtons';
 
 export default class Calculator extends Component {
   constructor(props) {
@@ -21,27 +22,6 @@ export default class Calculator extends Component {
   };
 
   render() {
-    const calcBtn = [
-      'AC',
-      '+/-',
-      '%',
-      '/',
-      '7',
-      '8',
-      '9',
-      'x',
-      '4',
-      '5',
-      '6',
-      '-',
-      '1',
-      '2',
-      '3',
-      '+',
-      '0',
-      '.',
-      '=',
-    ];
     return (
       <div className="main__container">
         <div className="calc__container">
