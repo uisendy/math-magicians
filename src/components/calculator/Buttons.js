@@ -1,10 +1,10 @@
 import React from 'react';
 import Button from './Button';
 
-const Buttons = ({ operandsAndOperators, handleClick }) => (
+const Buttons = ({ calcBtn, handleClick }) => (
   <div className="button__container">
     <div className="calc-keys">
-      {operandsAndOperators.map((calcKeys, index) => (
+      {calcBtn.map((calcKeys, index) => (
         <Button
           value={calcKeys}
           id={index}

@@ -21,7 +21,7 @@ export default class Calculator extends Component {
   };
 
   render() {
-    const operandsAndOperators = [
+    const calcBtn = [
       'AC',
       '+/-',
       '%',
@@ -42,15 +42,11 @@ export default class Calculator extends Component {
       '.',
       '=',
     ];
-    console.log(this.state);
     return (
       <div className="main__container">
         <div className="calc__container">
           <Display display={this.state} />
-          <Buttons
-            operandsAndOperators={operandsAndOperators}
-            handleClick={this.handleClick}
-          />
+          <Buttons calcBtn={calcBtn} handleClick={this.handleClick} />
         </div>
       </div>
     );
