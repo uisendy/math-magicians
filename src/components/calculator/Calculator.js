@@ -1,12 +1,24 @@
 import React, { Component } from 'react';
+import Display from './Display';
 import Buttons from './Buttons';
+import calculate from '../../logic/calculate';
 import './calculator.css';
 
 export default class Calculator extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.obj = {
+      total: '',
+      next: '',
+      operation: '',
+    };
+    this.state = this.obj;
+    this.handleClick = this.handleClick.bind(this);
   }
+
+  handleClick = (e) => {
+    this.setState((state) => calculate(state, e.target.textContent));
+  };
 
   render() {
     const operandsAndOperators = [
@@ -17,7 +29,7 @@ export default class Calculator extends Component {
       '7',
       '8',
       '9',
-      'X',
+      'x',
       '4',
       '5',
       '6',
@@ -30,15 +42,15 @@ export default class Calculator extends Component {
       '.',
       '=',
     ];
+    console.log(this.state);
     return (
       <div className="main__container">
         <div className="calc__container">
-          <div className="display__area">
-            <p className="disp__result">0</p>
-          </div>
-          <div className="button__container">
-            <Buttons operandsAndOperators={operandsAndOperators} />
-          </div>
+          <Display display={this.state} />
+          <Buttons
+            operandsAndOperators={operandsAndOperators}
+            handleClick={this.handleClick}
+          />
         </div>
       </div>
     );
