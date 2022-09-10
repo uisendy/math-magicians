@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Display({ display }) {
+function Display({ displayObj }) {
   return (
     <div className="display__area">
       <p className="disp__result">
-        {display.next ? display.next : display.total}
+        {displayObj.next ? displayObj.next : displayObj.total}
       </p>
     </div>
   );
