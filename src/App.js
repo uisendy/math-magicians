@@ -1,9 +1,13 @@
-import Calculator from './components/calculator/Calculator';
+import Header from './components/Header';
+import NavBar from './components/NavBar';
+import Home from './components/pages/Home';
 
 function App() {
   return (
     <div className="App">
-      <Calculator />
+      <NavBar />
+      <Header />
+      <Home />
     </div>
   );
 }
