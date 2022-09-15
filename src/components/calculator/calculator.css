@@ -88,7 +88,6 @@ button[id="18"]:focus {
 }
 
 @media only screen and (min-width: 768px) {
-  
   .calc__container {
     background-color: whitesmoke;
     overflow: hidden;

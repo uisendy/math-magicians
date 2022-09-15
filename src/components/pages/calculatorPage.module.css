@@ -1,4 +1,4 @@
-.calc__container{
+.calc__container {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   padding: 3rem 6.5%;
