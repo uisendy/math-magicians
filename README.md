@@ -11,6 +11,15 @@
 - ReactJs
 - CSS3
 
+- #### Testing
+
+  - Jest
+  - React Testing Library.
+
+- #### Deployment
+
+  - Netflify
+
 ## Prerequisites
 
 - Git
@@ -25,11 +34,11 @@
 
 # Getting Started with Math-Magicians webApp.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+** This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).**
 
 To get a local copy up and running follow these simple example steps.
 
-### Install
+### Installations
 
 - On this GitHub repo, navigate to the main page of the repository. Above the list of files, click Download icon and Code.
 - Copy for git clone
@@ -37,7 +46,7 @@ To get a local copy up and running follow these simple example steps.
   `$ git clone git@github.com:uisendy/math-magicians.git`
 - Install dependencies `$ npm install`
 
-### `npm start`
+### Starting on Local Server - `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -50,7 +59,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 - Github: [@SendyIU](https://github.com/uisendy)
 - Twitter: [@sinieke](https://twitter.com/sinieke)
-- LinkedIn: [LinekdIn](https://www.linkedin.com/in/surafel-getachew-80155b187/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/surafel-getachew-80155b187/)
 
 ## 🤝 Contributing
 
