@@ -13,3 +13,8 @@ it('renders correctly', () => {
   const tree = renderer.create(<Calculator />).toJSON();
   expect(tree).toMatchSnapshot();
 });
+
+test('Calculator display should equal to 0', () => {
+  const { getByText } = render(<Calculator />);
+  expect(getByText(/0/i)).toMatchSnapshot();
+});
