@@ -1,4 +1,4 @@
-# Math Magician WebApp
+# Math Magician
 
 "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to; Make simple calculations, Read a random math-related quote. It is developed using react and it is a good repo to learn ReactJs.
 
@@ -29,8 +29,6 @@
 - VS code editor
 
 ## Live Demo
-
-[Demo Coming Soon]()
 
 # Getting Started with Math-Magicians webApp.
 
